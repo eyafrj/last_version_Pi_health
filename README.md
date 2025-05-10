@@ -21,23 +21,9 @@
 
 ### 🧠 2. Modélisation IA (local avec Python)
 
-
-
 #####
-## 🚀 Démo en ligne
+## lien site
 
 🔗 [Accéder à l'application NeoMedix](https://http://localhost:4200/login) 
 
-```bash
-# Environnement virtuel (facultatif)
-python -m venv venv
-source venv/bin/activate     # ou venv\Scripts\activate sous Windows
 
-# Installer les dépendances
-pip install -r requirements.txt
-
-# Lancer la prévision des coûts hospitaliers
-python scripts/forecast_costs.py
-
-# Lancer la prévision des admissions ICU
-python scripts/predict_admissions.py
