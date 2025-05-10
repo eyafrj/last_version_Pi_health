@@ -1,0 +1,309 @@
+<!DOCTYPE html> 
+<html lang="zxx">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+  <meta name="author" content="themefisher.com">
+  <title>Novena- Health & Care Medical template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/images/about/drug.jpeg" />
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Icon Font Css -->
+  <link rel="stylesheet" href="/assets/plugins/icofont/icofont.min.css">
+  <!-- Slick Slider  CSS -->
+  <link rel="stylesheet" href="/assets/plugins/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/assets/plugins/slick-carousel/slick/slick-theme.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Custom Styles -->
+  <style>
+    /* Styles pour la modale */
+    .modal-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    button.btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button.btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Style pour la section de formulaire */
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-container .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-container input,
+    .form-container select {
+      border-radius: 8px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      background-color: #007bff;
+      color: white;
+      font-size: 1.2rem;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .form-container button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05); /* Légère animation d'agrandissement au survol */
+    }
+
+    .form-container label {
+      font-weight: bold;
+    }
+
+    .page-title.bg-1 {
+      padding: 130px 0; /* Ajuster la hauteur du bloc */
+      margin-top: -20px; /* Réduire l'espace entre le navbar et le bloc */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .page-title .text-white {
+      font-size: 1.5rem; /* Augmenter la taille du texte */
+    }
+
+    .page-title h1 {
+      font-size: 3rem; /* Augmenter la taille du titre */
+      margin-bottom: 20px;
+    }
+
+    /* Amélioration des bordures de formulaire */
+    .form-container input,
+    .form-container select {
+      border: 1px solid #ccc; /* Bordure plus claire */
+    }
+
+    /* Ajout d'ombre légère sur les titres de section */
+    .section-title h2 {
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    }
+
+    /* Améliorations générales */
+    .navbar {
+      margin-bottom: 0; /* Réduire l'espace sous la navbar */
+    }
+
+    /* Section footer */
+    .footer {
+      background-color: #f9f9f9;
+      padding: 40px 0;
+    }
+
+    .footer .widget .logo img {
+      max-width: 150px;
+    }
+
+    .navbar-brand img {
+      width: 90px;  /* Ajustez cette valeur pour obtenir la taille souhaitée */
+      height: auto;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+<header>
+  <div class="header-top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <ul class="top-bar-info list-inline-item pl-0 mb-0">
+            <li class="list-inline-item"><a href="mailto:support@gmail.com"><i class="icofont-support-faq mr-2"></i>support@novena.com</a></li>
+            <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>Address Ta-134/A, New York, USA</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="text-lg-right top-right-bar mt-2 mt-lg-0">
+            <a href="tel:+23-345-67890">
+              <span>Call Now : </span>
+              <span class="h4">823-4565-13456</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navigation" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/images/about/téléchargement.jpg" alt="" class="img-fluid">
+      </a>
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icofont-navigation-menu"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarmain">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+          <a class="nav-link" [routerLink]="'/financial'">Home</a>
+          </li>
+           <li class="nav-item"><a class="nav-link" [routerLink]="'/financial'">About</a></li>
+            <li class="nav-item"><a class="nav-link" [routerLink]="'/financial'">Services</a></li>
+  
+                 
+  
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">regression <i class="icofont-thin-down"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" [routerLink]="'/Predictfinance'">length of stay icu </a></li>
+              <li><a class="dropdown-item" [routerLink]="'/regressioncostfinance'">total cost </a></li>
+            </ul>
+            </li>
+  
+       
+           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<section class="page-title bg-1" style="background-image: url('/assets/images/about/costs.png');">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block text-center">
+     
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FORMULAIRE -->
+<div class="form-container">
+  <form (ngSubmit)="submitForm()" #form="ngForm">
+    <div class="form-group mb-3">
+      <label for="Facility_Cost">Facility Cost</label>
+      <input type="number" id="Facility_Cost" [(ngModel)]="formData.Facility_Cost" name="Facility_Cost" class="form-control" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="Procedure_Cost">Procedure Cost</label>
+      <input type="number" id="Procedure_Cost" [(ngModel)]="formData.Procedure_Cost" name="Procedure_Cost" class="form-control" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="ICU_Stay">ICU Stay (days)</label>
+      <input type="number" id="ICU_Stay" [(ngModel)]="formData.ICU_Stay" name="ICU_Stay" class="form-control" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="normal_Admission_Stay">Normal Admission Stay (days)</label>
+      <input type="number" id="normal_Admission_Stay" [(ngModel)]="formData.normal_Admission_Stay" name="normal_Admission_Stay" class="form-control" required>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="Department_Type">Department Type</label>
+      <select id="Department_Type" [(ngModel)]="formData.Department_Type" name="Department_Type" class="form-control" required>
+        <option [value]="0">elective</option>
+        <option [value]="1">emergency</option>
+        <option [value]="2">urgent</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+<!-- Modale pour afficher les résultats -->
+<div *ngIf="prediction !== null" class="modal-container">
+  <div class="modal-content">
+    <h4 class="modal-title">Prediction Result</h4>
+    <p>The predicted cost is: <strong>{{ prediction | number:'1.2-2' }} USD</strong></p>
+    <button class="btn btn-secondary" (click)="prediction = null">Close</button>
+  </div>
+</div>
+
+<section class="section service-2">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center">
+        <div class="section-title">
+          <h2>Services We Offer</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p>&copy; 2023 All rights reserved. Designed by Themefisher</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="/assets/plugins/jquery/jquery.min.js"></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page de connexion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #143976 50%, #EEF2FF 50%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 1000px;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .left, .right {
+      width: 50%;
+      padding: 60px 40px;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left h3 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #111827;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    label {
+      font-size: 14px;
+      color: #6B7280;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 14px 12px 40px;
+      font-size: 14px;
+      border: 1px solid #D1D5DB;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .form-group i {
+      position: absolute;
+      top: 38px;
+      left: 12px;
+      color: #9CA3AF;
+    }
+
+    .form-check {
+      margin-bottom: 20px;
+    }
+
+    .form-check label {
+      font-size: 14px;
+      color: #374151;
+      margin-left: 5px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #143976;
+      border: none;
+      color: white;
+      font-weight: 600;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2563EB;
+    }
+
+    .alert {
+      margin-top: 10px;
+      font-size: 14px;
+      color: red;
+    }
+
+    .right {
+      background-color: #F9FAFB;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .right img {
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .right h5 {
+      font-size: 18px;
+      color: #1F2937;
+      margin-bottom: 10px;
+    }
+
+    .right p {
+      font-size: 14px;
+      color: #6B7280;
+      max-width: 250px;
+    }
+
+    .signup {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .signup a {
+      color: #3B82F6;
+      text-decoration: none;
+    }
+
+    .signup a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive pour mobiles */
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .left, .right {
+        width: 100%;
+        padding: 40px 20px;
+      }
+
+      .right {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      .left h3 {
+        font-size: 26px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="left">
+      <h3>Connexion</h3>
+      <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+        <div class="form-group">
+          <label for="username">Nom d'utilisateur</label>
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" name="username" [(ngModel)]="username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" name="password" [(ngModel)]="password" required />
+        </div>
+
+        <div class="form-check" style="display: flex; align-items: center; margin-bottom: 20px;">
+          <input type="checkbox" id="rememberMe" [(ngModel)]="rememberMe" name="rememberMe" />
+          <label for="rememberMe" style="margin-left: 0;">Se souvenir de moi</label>
+        </div>
+
+        <button type="submit" class="btn" [disabled]="!loginForm.valid">Se connecter</button>
+        <div *ngIf="errorMessage" class="alert">{{ errorMessage }}</div>
+
+        <div class="signup">
+          <small>Vous n’avez pas de compte ? <a href="#">S’inscrire</a></small>
+        </div>
+      </form>
+    </div>
+
+    <div class="right">
+      <img src="/assets/images/about/téléchargement.png" alt="Logo" style="max-width: 300px; height: auto;" />
+      <p>Bienvenue sur NEOMEDIX</p>
+    </div>
+  </div>
+</body>
+</html>
